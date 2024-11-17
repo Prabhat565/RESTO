@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminCotroller;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\ReservationController;
 use App\Http\Controllers\Admin\TableController;
@@ -51,5 +52,6 @@ Route::middleware(['auth', 'admin_auth'])->name('admin.')->prefix('admin')->grou
     Route::resource('/tables', TableController::class);
     Route::resource('/reservations', ReservationController::class);
 });
+Route::post('/order/{id}', [OrderController::class, 'store'])->name('order.store');
 
 require __DIR__ . '/auth.php';

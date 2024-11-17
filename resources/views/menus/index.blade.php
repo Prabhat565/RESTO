@@ -15,7 +15,11 @@
                     <img class="h-48" src="{{ Storage::url($menu->image) }}" alt="Image" />
                     <h4 class="uppercase">{{ $menu->name }} ................ <span>{{ $menu->price }}</span></h4>
                     <h5>{{ $menu->description }}</h5>
-                    <button class="px-4 py-2 bg-green-600 text-green-50">Order Now</button>
+                    <form action="{{ route('order.store', $menu->id) }}" method="POST">
+                        @csrf
+                        <button type="submit" class="px-4 py-2 bg-green-600 text-green-50">Order Now</button>
+                    </form>
+    
                 </div>
 
             @endforeach

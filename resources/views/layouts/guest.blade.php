@@ -157,7 +157,7 @@
                         </div>
                         <div class="address">
                             <p><i class="fa fa-map-marker"></i> Our Location</p>
-                            <h4>120 Duis aute irure, California, USA</h4>
+                            <h4>Punjab Phagwara, India</h4>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
@@ -169,11 +169,8 @@
                     <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
                         <h2 class="heading">Follow Us</h2>
                         <ul class="social-icon">
-                            <li><a href="#" class="fa fa-facebook wow bounceIn" data-wow-delay="0.3s"></a></li>
-                            <li><a href="#" class="fa fa-twitter wow bounceIn" data-wow-delay="0.6s"></a></li>
-                            <li><a href="#" class="fa fa-behance wow bounceIn" data-wow-delay="0.9s"></a></li>
-                            <li><a href="#" class="fa fa-dribbble wow bounceIn" data-wow-delay="0.9s"></a></li>
-                            <li><a href="#" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
+                            <li><a href="https://www.linkedin.com/in/prabhat-sharma1/" target="_blank" class="fa fa-linkedin wow bounceIn" data-wow-delay="0.3s"></a></li>
+                            <li><a href="https://github.com/Prabhat565"  target="_blank" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"></a></li>
                         </ul>
                     </div>
                 </div>

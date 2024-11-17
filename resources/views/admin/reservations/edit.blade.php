@@ -58,7 +58,8 @@
 
                     <div class="mb-6">
                         <label for="res_date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Reservation Date</label>
-                        <input type="datetime-local" id="res_date" name="res_date" value="{{ $reservation->res_date->format('Y-m-d\TH:i:s') }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('res_date') border-red-400 @enderror">
+                        <input type="datetime-local" id="res_date" name="res_date" value="{{ $reservation->res_date instanceof \Carbon\Carbon ? $reservation->res_date->format('Y-m-d\TH:i:s') : $reservation->res_date }}"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('res_date') border-red-400 @enderror">
                         @error('res_date')
                             <div class="text-sm text-red-400">{{ $message }}</div>
                         @enderror
@@ -86,3 +87,4 @@
     </div>
 
 </x-admin-layout>
+    
